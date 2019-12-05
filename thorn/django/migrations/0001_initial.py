@@ -62,6 +62,6 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterUniqueTogether(
             name='subscriber',
-            unique_together=set([('url', 'event')]),
+            unique_together=set([('event', 'url')]),
         ),
     ]
